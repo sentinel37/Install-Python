@@ -13,6 +13,6 @@ pip install -r requirements/test.txt
 stage("Unittests") {
     sh """
     . .env/bin/activate
-    ./manage.py test --noinput
+    ./hello.py test --noinput
     """
 }
