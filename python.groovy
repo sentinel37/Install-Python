@@ -7,6 +7,7 @@ pipeline {
                     withPythonEnv('/usr/local/src/bin/python2.7') {
                         sh """
                             python -V && which virtualenv && ls
+                            source activate ${BUILD_TAG}
                         """
                     }
                 }
