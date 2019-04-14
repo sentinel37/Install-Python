@@ -7,6 +7,7 @@ pipeline {
                     withPythonEnv('python2.7') {
                         sh """
                             python -V && which virtualenv && ls
+                            python hello.py
                         """
                     }
                 }
