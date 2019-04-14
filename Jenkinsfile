@@ -4,7 +4,7 @@ pipeline {
         stage('Testing') {
             steps {
                 script {
-                    withPythonEnv('/usr/local/src/bin/python2.7') {
+                    withPythonEnv('/usr/bin/python2.7') {
                         sh """
                             python -V && which virtualenv && ls
                         """
